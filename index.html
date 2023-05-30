@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/Encryptor.css">
+
+    <title>Text Encryptor</title>
+
+</head>
+
+<body class="grid-container">
+
+    <!--CABECERA-->
+
+    <header>
+
+        <div class="contenedor-head">
+            <h1 id="logo">Encryptor App</h1>
+            <img id="logos" src="assets/Group 1.png" alt="">
+        </div>
+
+    </header>
+    
+    <!--
+        CONTENEDOR MAIN | CUADRO INGRESAR TEXTO | CUADRO RESPUESTAS | BOTONES ENCRIPTAR / DESENCRIPTAR
+        BOTÓN COPIAR
+    -->
+
+    <main>
+
+        <div class="contenedor-main" id="inicio">
+
+            <div class="mensaje">
+
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+                
+                <div class="reglas">
+                
+                    <img id="warning" src="assets/warning.png" alt="">
+                    <p id="reglas">Asegúrate de utilizar solo letras minúsculas y sin acentos</p>
+
+                </div><!--reglas-->
+                
+                <div class="botones">
+
+                    <input type="button" value="Encriptar" id="boton-encriptar">
+                    <input type="button" value="Desencriptar" id="boton-desencriptar">
+
+                </div><!--botones-->
+
+            </div><!--mensaje-->
+                
+
+            <div id="respuesta">
+
+                <div id="antes-respuesta">
+
+                    <div class="imagen">
+
+                        <img id="imagen" src="assets/Muñeco.png" alt="">
+
+                    </div><!--imagen-->
+                    
+                    <p id="no-encontrado"><strong>¡Ningún mensaje fue encontrado!</strong></p>
+                    <p id="ingreso">Ingresa en texto que desees encriptar o desencriptar.</p>
+
+                </div><!--antes respuesta-->
+                
+                <textarea id="mih1" class="respuesta-encriptado">
+
+                </textarea>
+
+                <button class="copia" id="boton-copia" onclick="copiarAlPortapapeles()">Copiar</button>
+            
+            </div><!--respuesta-->
+
+        </div><!--contenedor main-->
+
+    </main>
+
+    <!--PIE DE PAGINA-->
+
+    <footer>
+
+        <div class="piepagina">
+
+            <p id="desarrollador">
+
+                Developed by Edna Novoa
+
+            </p>
+
+            <div class="logoredes">
+
+            <a target="_blank"  href="https://www.linkedin.com/in/edna-novoa/"><img id="linkedin" src="assets/linkedin-round-svgrepo-com.png" alt=""></a>
+            <a target="_blank"  href="https://github.com/CetusDNA"><img id="linkedin" src="assets/github-142-svgrepo-com.png" alt=""></a>
+            
+            </div><!--logoredes-->
+            
+
+            <p id="copyr">Copyright ©2023 Edna Novoa. All rights reserved.</p>
+
+        </div><!--piepagina-->
+        
+    </footer>
+    
+    <!--LLAMADO ARCHIVO JAVASCRIPT-->
+
+    <script src="javascript/Encryptor.js"></script>
+
+</body>
+
+</html>
